@@ -2,9 +2,13 @@
 Python, R and Matlab implementation of Brown's Method to combine dependent P-values
 
 Author: William Poole
+
 Ported to Matlab: Theo Knijnenburg
+
 Ported to R: David L Gibbs
+
 Email: william.poole@systemsbiology.org / tknijnen@systemsbiology.org / dgibbs@systemsbiology.org
+
 Created: June 2015
 
 Python 

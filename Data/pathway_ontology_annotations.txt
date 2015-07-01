@@ -1,0 +1,372 @@
+200055	100	RP	Validated transcriptional targets of AP1 family members Fra1 and Fra2	Transcription pathways
+200125	200113	SP	E-cadherin signaling in the nascent adherens junction	E-cadherin signaling events
+200183	200113	SP	Stabilization and expansion of the E-cadherin adherens junction	E-cadherin signaling events
+200130	200103	SP	IFN-gamma pathway	PLK1 signaling events
+200203	200103	SP	HIF-1-alpha transcription factor network	PLK1 signaling events
+200157	200111	SP	Syndecan-1-mediated signaling events	C-MYC pathway
+200193	200111	SP	Syndecan-2-mediated signaling events	C-MYC pathway
+200135	200111	SP	Syndecan-4-mediated signaling events	C-MYC pathway
+200199	200111	SP	Syndecan-3-mediated signaling events	C-MYC pathway
+200230	200045	SP	IL12 signaling mediated by STAT4	IL12-mediated signaling events
+200118	200098	SP	IL2 signaling events mediated by PI3K	IL2-mediated signaling events
+200185	200098	SP	IL2 signaling events mediated by STAT5	IL2-mediated signaling events
+200134	200101	SP	ErbB1 downstream signaling	EGF receptor (ErbB1) signaling pathway
+200172	200101	SP	Internalization of ErbB1	EGF receptor (ErbB1) signaling pathway
+200215	200151	SP	Trk receptor signaling mediated by PI3K and PLC-gamma	Neurotrophic factor-mediated Trk receptor signaling
+200214	200151	SP	Trk receptor signaling mediated by the MAPK pathway	Neurotrophic factor-mediated Trk receptor signaling
+200049	200105	SP	Coregulation of Androgen receptor activity	Androgen-mediated signaling
+200171	200105	SP	Nongenotropic Androgen signaling	Androgen-mediated signaling
+200121	200105	SP	Regulation of Androgen receptor activity	Androgen-mediated signaling
+200071	105	SP	Regulation of CDC42 activity	Rho/Rac/Cdc42 mediated signaling pathways
+200069	200071	SP	CDC42 signaling events	Regulation of CDC42 activity
+200061	105	SP	Regulation of RhoA activity	Rho/Rac/Cdc42 mediated signaling pathways
+200119	541	SP	Ceramide signaling pathway	Signaling pathways involving second messengers
+200074	541	SP	LKB1 signaling events	Signaling pathways involving second messengers
+200198	232	SP	Class I PI3K signaling events mediated by Akt	Phosphatidylinositol 3-kinase-Akt signaling pathway
+200162	59	SP	Visual signal transduction: Rods	Signaling pathways pertinent to the brain
+200111	100	RP	C-MYC pathway	Transcription pathways
+200201	200111	RP	Validated targets of C-MYC transcriptional repression	C-MYC pathway
+200009	200061	SP	RhoA signaling pathway	Regulation of RhoA activity
+200194	105	SP	Regulation of RAC1 activity	Rho/Rac/Cdc42 mediated signaling pathways
+200223	200194	SP	RAC1 signaling pathway	Regulation of RAC1 activity
+467	465	SP	Peptide and protein hormone signaling pathways	Hormone signaling pathways
+143	467	SP	Insulin signaling pathway	Peptide and protein hormone signaling pathways
+506	467	SP	Endothelin signaling pathway	Peptide and protein hormone signaling pathways
+567	468	SP	Sex steroids signaling pathways	Steroid hormone signaling pathways
+198	312	SP	p38 MAPK signaling pathways	Stress-regulated MAPK signaling pathway
+312	7	SP	Stress-regulated MAPK signaling pathway	Mitogen activated protein kinase signaling pathways
+6	3	SP	Ras superfamily mediated signaling pathways	Signaling pathways
+571	59	SP	Neurotrophic factor signaling pathways	Signaling pathways pertinent to the brain
+387	6	SP	Arf family mediated signaling pathways	Ras superfamily mediated signaling pathways
+200209		SP	Endogenous TLR signaling	
+122	650	SP	Hedgehog signaling pathway	Signaling pathways pertinent to development
+595	541	SP	Phosphatidylinositol 3-kinase signaling pathway	Signaling pathways involving second messengers
+487	235	RP	Major histocompatibility complex class II antigen presentation pathway	Adaptive immune response pathways
+233	106	SP	Tumor necrosis factor mediated signaling pathway	Extrinsic apoptotic pathways
+86	85	RP	Cell cycle pathways, mitotic	Pathways of replication, repair, gene expression, protein biosynthesis
+647	100	RP	Forkhead signaling pathways	Transcription pathways
+659	657	SP	Syndecan signaling pathway	Proteoglycan signaling pathway
+652	3	SP	Phosphatase mediated signaling pathways	Signaling pathways
+683	286	SP	Integrin mediated cell-cell signaling pathways	Integrin mediated signaling pathway
+684	286	SP	Integrin mediated cell-extracellular matrix signaling pathways	Integrin mediated signaling pathway
+286	648	SP	Integrin mediated signaling pathway	Cell adhesion signaling pathways
+200203	200144	RP	HIF-1-alpha transcription factor network	Hypoxic and oxygen homeostasis regulation of HIF-1-alpha
+200112	200005	SP	EGFR-dependent Endothelin signaling events	Endothelins
+200053	200129	SP	Osteopontin-mediated events	Integrins in angiogenesis
+200015	204	SP	Notch signaling pathway	Notch signaling pathways
+204	656	SP	Notch signaling pathways	Glycoprotein signaling pathway
+200138	100	SP	AP-1 transcription factor network	Transcription pathways
+716	3	SP	Transcription factor mediated signaling pathways	Signaling pathways
+200144	100	RP	Hypoxic and oxygen homeostasis regulation of HIF-1-alpha	Transcription pathways
+200106	100	RP	Rapid glucocorticoid signaling	Transcription pathways
+200100	238	SP	IGF1 pathway	Insulin-like growth factor signaling pathway
+200078	654	SP	Signaling events mediated by TCPTP	Tyrosine-specific phosphatase mediated signaling pathways
+200106	201	SP	Rapid glucocorticoid signaling	Canonical Wnt signaling pathways
+647	716	SP	Forkhead signaling pathways	Transcription factor mediated signaling pathways
+499	716	SP	Nuclear Factor Kappa B signaling pathways	Transcription factor mediated signaling pathways
+718	716	SP	p53 signaling pathway	Transcription factor mediated signaling pathways
+200055	716	SP	Validated transcriptional targets of AP1 family members Fra1 and Fra2	Transcription factor mediated signaling pathways
+200111	716	SP	C-MYC pathway	Transcription factor mediated signaling pathways
+200138	716	SP	AP-1 transcription factor network	Transcription factor mediated signaling pathways
+200144	716	SP	Hypoxic and oxygen homeostasis regulation of HIF-1-alpha	Transcription factor mediated signaling pathways
+200106	716	SP	Rapid glucocorticoid signaling	Transcription factor mediated signaling pathways
+200106	716	SP	Rapid glucocorticoid signaling	Transcription factor mediated signaling pathways
+200090	716	SP	Role of Calcineurin-dependent NFAT signaling in lymphocytes	Transcription factor mediated signaling pathways
+200032	716	SP	E2F transcription factor network	Transcription factor mediated signaling pathways
+200136	716	SP	ATF-2 transcription factor network	Transcription factor mediated signaling pathways
+200090	716	SP	Role of Calcineurin-dependent NFAT signaling in lymphocytes	Transcription factor mediated signaling pathways
+200144	716	SP	Hypoxic and oxygen homeostasis regulation of HIF-1-alpha	Transcription factor mediated signaling pathways
+200090	716	SP	Role of Calcineurin-dependent NFAT signaling in lymphocytes	Transcription factor mediated signaling pathways
+200056	200111	SP	Validated targets of C-MYC transcriptional activation	C-MYC pathway
+200225	684	SP	Signaling events mediated by focal adhesion kinase	Integrin mediated cell-extracellular matrix signaling pathways
+200179	716	SP	Regulation of cytoplasmic and nuclear SMAD2/3 signaling	Transcription factor mediated signaling pathways
+200036	716	SP	HIF-2-alpha transcription factor network	Transcription factor mediated signaling pathways
+200229	200015	SP	Notch-mediated HES/HEY network	Notch signaling pathway
+200013	332	SP	LPA receptor mediated events	Cell-cell signaling pathways
+200032	716	SP	E2F transcription factor network	Transcription factor mediated signaling pathways
+200179	716	SP	Regulation of cytoplasmic and nuclear SMAD2/3 signaling	Transcription factor mediated signaling pathways
+200036	716	SP	HIF-2-alpha transcription factor network	Transcription factor mediated signaling pathways
+200154	716	SP	C-MYB transcription factor network	Transcription factor mediated signaling pathways
+200207	718	SP	p53 pathway	p53 signaling pathway
+200035	203	RP	DNA-PK pathway in nonhomologous end joining	non-homologous end joining pathway of double-strand break repair
+717		SP	Forkhead class O signaling pathway	
+200088	59	SP	Netrin-mediated signaling events	Signaling pathways pertinent to the brain
+200019	577	SP	GMCSF-mediated signaling events	Cytokine and chemokine mediated signaling pathways
+200047	200013	SP	LPA4-mediated signaling events	LPA receptor mediated events
+200181	200018	SP	Signaling mediated by p38-alpha and p38-beta	p38 MAPK signaling pathway
+200148	200113	SP	E-cadherin signaling in keratinocytes	E-cadherin signaling events
+200067	8	SP	Wnt signaling network	Wnt signaling pathways
+200066	200018	SP	Regulation of p38-alpha and p38-beta	p38 MAPK signaling pathway
+200166	200018	SP	Signaling mediated by p38-gamma and p38-delta	p38 MAPK signaling pathway
+200158	200018	SP	p38 signaling mediated by MAPKAP kinases	p38 MAPK signaling pathway
+200146	512	SP	IL3-mediated signaling events	Interleukin mediated signaling pathways
+200107	512	SP	IL5-mediated signaling events	Interleukin mediated signaling pathways
+200117	168	SP	Posttranslational regulation of adherens junction stability and dissassembly	Growth factor signaling pathways
+200117	332	SP	Posttranslational regulation of adherens junction stability and dissassembly	Cell-cell signaling pathways
+200024	200117	SP	Degradation of beta catenin	Posttranslational regulation of adherens junction stability and dissassembly
+200137	512	SP	IL8-mediated signaling events	Interleukin mediated signaling pathways
+200168	200137	SP	IL8- and CXCR2-mediated signaling events	IL8-mediated signaling events
+200200	200137	SP	IL8- and CXCR1-mediated signaling events	IL8-mediated signaling events
+200140	648	SP	Urokinase-type plasminogen activator (uPA) and uPAR-mediated signaling	Cell adhesion signaling pathways
+200044	476	SP	Thrombin/protease-activated receptor (PAR) pathway	Cardiovascular system homeostasis pathway
+200190	200035	SP	PAR1-mediated thrombin signaling events	DNA-PK pathway in nonhomologous end joining
+476	355	SP	Cardiovascular system homeostasis pathway	Homeostasis pathway
+200110	200035	SP	PAR4-mediated thrombin signaling events	DNA-PK pathway in nonhomologous end joining
+200204	200008	RP	Validated transcriptional targets of TAp63 isoforms	p63 transcription factor network
+200015	286	SP	Notch signaling pathway	Integrin mediated signaling pathway
+200187	200008	RP	Validated transcriptional targets of deltaNp63 isoforms	p63 transcription factor network
+200008	100	RP	p63 transcription factor network	Transcription pathways
+200017	100	SP	p73 transcription factor network	Transcription pathways
+200039	286	SP	Integrin family cell surface interactions	Integrin mediated signaling pathway
+200126	200039	SP	Alpha6 beta4 integrin-ligand interactions	Integrin family cell surface interactions
+200043	200039	SP	Beta3 integrin cell surface interactions	Integrin family cell surface interactions
+200040	200039	SP	AlphaE beta7 integrin cell surface interactions	Integrin family cell surface interactions
+200139	200039	SP	Beta2 integrin cell surface interactions	Integrin family cell surface interactions
+200093	200039	SP	Alpha9 beta1 integrin signaling events	Integrin family cell surface interactions
+200202	297	SP	PDGF receptor signaling network	Platelet-derived growth factor signaling pathways
+200038	94	RP	ATR signaling pathway	Cell cycle checkpoint pathways
+94	85	RP	Cell cycle checkpoint pathways	Pathways of replication, repair, gene expression, protein biosynthesis
+200072	94	SP	ATM pathway	Cell cycle checkpoint pathways
+203	663	RP	non-homologous end joining pathway of double-strand break repair	DNA break repair pathway
+663	99	RP	DNA break repair pathway	DNA repair pathway
+99	85	RP	DNA repair pathway	Pathways of replication, repair, gene expression, protein biosynthesis
+200109	168	SP	VEGF and VEGFR signaling network	Growth factor signaling pathways
+200002	99	RP	Fanconi anemia pathway	DNA repair pathway
+200064	286	SP	Integrin-linked kinase signaling	Integrin mediated signaling pathway
+200157	100	RP	Syndecan-1-mediated signaling events	Transcription pathways
+200093	100	RP	Alpha9 beta1 integrin signaling events	Transcription pathways
+200083	654	SP	SHP2 signaling	Tyrosine-specific phosphatase mediated signaling pathways
+200212	6	SP	S1P2 pathway	Ras superfamily mediated signaling pathways
+200086	651	RP	Regulation of Telomerase	Aging pathway
+200174	9	RP	Caspase Cascade in Apoptosis	Apoptotic cell death pathways
+200123	106	SP	p75(NTR)-mediated signaling	Extrinsic apoptotic pathways
+200004	23	RP	Fc-epsilon receptor I signaling in mast cells	Immune response pathways
+200090	23	RP	Role of Calcineurin-dependent NFAT signaling in lymphocytes	Immune response pathways
+200065	332	SP	Nectin adhesion pathway	Cell-cell signaling pathways
+200113	333	SP	E-cadherin signaling events	Cadherins signaling pathways
+200217	200051	SP	EPHA2 forward signaling	EphrinA-EPHA pathway
+200205	200164	SP	Ephrin B reverse signaling	EphrinB-EPHB pathway
+200052	200164	SP	EPHB forward signaling	EphrinB-EPHB pathway
+200129	683	SP	Integrins in angiogenesis	Integrin mediated cell-cell signaling pathways
+200111	659	SP	C-MYC pathway	Syndecan signaling pathway
+200099	577	SP	CXCR4-mediated signaling events	Cytokine and chemokine mediated signaling pathways
+200155	512	SP	IL23-mediated signaling events	Interleukin mediated signaling pathways
+200226	200010	SP	Glypican 3 network	Glypican pathway
+200189	243	SP	Signaling events mediated by VEGFR1 and VEGFR2	Vascular endothelial growth factor signaling pathways
+200091	200030	SP	Glucocorticoid receptor regulatory network	Glucocorticoid receptor signaling
+200034	507	SP	Plasma membrane estrogen receptor signaling	Estrogen signaling pathway
+200212	200124	SP	S1P2 pathway	Sphingosine 1-phosphate (S1P) pathway
+200076	200124	SP	S1P5 pathway	Sphingosine 1-phosphate (S1P) pathway
+200133	59	SP	Lissencephaly gene (LIS1) in neuronal migration and development	Signaling pathways pertinent to the brain
+200115	100	RP	Sumoylation by RanBP2 regulates transcriptional repression	Transcription pathways
+200143	100	RP	EPHA forward signaling	Transcription pathways
+200051	322	SP	EphrinA-EPHA pathway	Ephrin - ephrin receptor bidirectional signaling axis
+200164	322	SP	EphrinB-EPHB pathway	Ephrin - ephrin receptor bidirectional signaling axis
+200028	512	SP	IL27-mediated signaling events	Interleukin mediated signaling pathways
+200098	512	SP	IL2-mediated signaling events	Interleukin mediated signaling pathways
+200045	512	SP	IL12-mediated signaling events	Interleukin mediated signaling pathways
+200063	8	SP	Presenilin action in Notch and Wnt signaling	Wnt signaling pathways
+200063	204	SP	Presenilin action in Notch and Wnt signaling	Notch signaling pathways
+200077	201	SP	Canonical Wnt signaling pathway	Canonical Wnt signaling pathways
+200010	658	SP	Glypican pathway	Glypican signaling pathway
+200127	200010	SP	Glypican 2 network	Glypican pathway
+200026	200010	SP	Glypican 1 network	Glypican pathway
+200184	168	SP	EPO signaling pathway	Growth factor signaling pathways
+200011	170	SP	ErbB4 signaling events	Epidermal growth factor/neuregulin signaling pathways
+200221	328	SP	FGF signaling pathway	Fibroblast growth factor signaling pathway
+200151	571	SP	Neurotrophic factor-mediated Trk receptor signaling	Neurotrophic factor signaling pathways
+200123	571	SP	p75(NTR)-mediated signaling	Neurotrophic factor signaling pathways
+200150	297	SP	PDGFR-beta signaling pathway	Platelet-derived growth factor signaling pathways
+200041	578	SP	Signaling events mediated by Hepatocyte Growth Factor Receptor (c-Met)	Scatter factor/hepatocyte growth factor signaling pathway
+200165	465	SP	Retinoic acid receptors-mediated signaling	Hormone signaling pathways
+200005	506	SP	Endothelins	Endothelin signaling pathway
+200030	566	SP	Glucocorticoid receptor signaling	Corticosteroid signaling pathway
+200106	200030	SP	Rapid glucocorticoid signaling	Glucocorticoid receptor signaling
+200105	564	SP	Androgen-mediated signaling	Androgen signaling pathway
+200014	143	SP	Insulin Pathway	Insulin signaling pathway
+200197	200014	SP	Insulin-mediated glucose transport	Insulin Pathway
+200196	387	SP	Arf1 pathway	Arf family mediated signaling pathways
+200057	200073	SP	Arf6 trafficking events	Arf6 signaling events
+200085	200124	SP	S1P1 pathway	Sphingosine 1-phosphate (S1P) pathway
+200046	200124	SP	S1P3 pathway	Sphingosine 1-phosphate (S1P) pathway
+200054	200124	SP	S1P4 pathway	Sphingosine 1-phosphate (S1P) pathway
+200133	650	SP	Lissencephaly gene (LIS1) in neuronal migration and development	Signaling pathways pertinent to development
+200220	59	SP	Alpha-synuclein signaling	Signaling pathways pertinent to the brain
+200092	59	SP	Visual signal transduction: Cones	Signaling pathways pertinent to the brain
+200032	86	RP	E2F transcription factor network	Cell cycle pathways, mitotic
+200136	100	RP	ATF-2 transcription factor network	Transcription pathways
+200025	100	RP	Signaling events mediated by HDAC Class III	Transcription pathways
+200087	200192	SP	FOXA2 and FOXA3 transcription factor networks	FOXA transcription factor networks
+200192	647	SP	FOXA transcription factor networks	Forkhead signaling pathways
+200048	499	SP	Alternative NF-kappaB pathway	Nuclear Factor Kappa B signaling pathways
+200195	200058	SP	Aurora A signaling	Signaling by Aurora kinases
+200060	200058	SP	Aurora C signaling	Signaling by Aurora kinases
+200012	200058	SP	Aurora B signaling	Signaling by Aurora kinases
+200006	23	RP	BCR signaling pathway	Immune response pathways
+200080	681	SP	FAS (CD95) signaling pathway	FasL mediated signaling pathway
+200102	233	SP	TNF receptor signaling pathway	Tumor necrosis factor mediated signaling pathway
+200068	682	SP	TRAIL signaling pathway	Trail mediated signaling pathway
+200156	616	SP	HIV-1 Nef: Negative effector of Fas and TNF-alpha	Altered tumor necrosis factor superfamily mediated signaling pathway
+200211	23	RP	Cellular roles of Anthrax toxin	Immune response pathways
+200050	200090	SP	Calcineurin-regulated NFAT-dependent transcription in lymphocytes	Role of Calcineurin-dependent NFAT signaling in lymphocytes
+200090	315	SP	Role of Calcineurin-dependent NFAT signaling in lymphocytes	Calcineurin signaling pathway
+200144	356	RP	Hypoxic and oxygen homeostasis regulation of HIF-1-alpha	Oxygen homeostasis pathway
+200090	100	RP	Role of Calcineurin-dependent NFAT signaling in lymphocytes	Transcription pathways
+200210	333	SP	N-cadherin signaling events	Cadherins signaling pathways
+200143	200051	SP	EPHA forward signaling	EphrinA-EPHA pathway
+200059	200051	SP	Ephrin A  reverse signaling	EphrinA-EPHA pathway
+200222	200039	SP	Alpha4 beta1 integrin signaling events	Integrin family cell surface interactions
+200128	683	SP	amb2 Integrin signaling	Integrin mediated cell-cell signaling pathways
+200182	577	SP	Signaling events mediated by Stem cell factor receptor (c-Kit)	Cytokine and chemokine mediated signaling pathways
+200130	577	SP	IFN-gamma pathway	Cytokine and chemokine mediated signaling pathways
+200147	512	SP	IL6-mediated signaling events	Interleukin mediated signaling pathways
+200022	512	SP	IL4-mediated signaling events	Interleukin mediated signaling pathways
+200089	512	SP	IL1-mediated signaling events	Interleukin mediated signaling pathways
+200020	597	SP	Noncanonical Wnt signaling pathway	Non-canonical Wnt signaling pathways
+200079	489	SP	Angiopoietin receptor Tie2-mediated signaling	Angiopoietin signaling pathway
+200070	571	SP	Signaling events regulated by Ret tyrosine kinase	Neurotrophic factor signaling pathways
+200163	297	SP	PDGFR-alpha signaling pathway	Platelet-derived growth factor signaling pathways
+200228	206	SP	TGF-beta receptor signaling	Transforming growth factor-beta signaling pathway
+200179	490	SP	Regulation of cytoplasmic and nuclear SMAD2/3 signaling	Transforming growth factor-beta Smad dependent signaling pathway
+200082	565	SP	Thromboxane A2 receptor signaling	Eicosanoids signaling pathway
+105	6	SP	Rho/Rac/Cdc42 mediated signaling pathways	Ras superfamily mediated signaling pathways
+331	329	SP	Activin signaling pathways	Transforming growth factor-beta superfamily mediated signaling pathway
+200073	387	SP	Arf6 signaling events	Arf family mediated signaling pathways
+200097	200116	SP	Class IB PI3K non-lipid kinase events	Class I PI3K signaling events
+200188	389	SP	Effects of Botulinum toxin	Altered pathway pertinent to signaling in the brain
+200084	100	RP	Signaling events mediated by HDAC Class I	Transcription pathways
+200227	200192	SP	FOXA1 transcription factor network	FOXA transcription factor networks
+200021	499	SP	Atypical NF-kappaB pathway	Nuclear Factor Kappa B signaling pathways
+200145	330	SP	BMP receptor signaling	Bone morphogenetic proteins signaling pathway
+200219	243	SP	VEGFR3 signaling in lymphatic endothelium	Vascular endothelial growth factor signaling pathways
+200013	469	SP	LPA receptor mediated events	Lipid hormone signaling pathways
+200007	654	SP	Signaling events mediated by PRL	Tyrosine-specific phosphatase mediated signaling pathways
+200027	487	RP	TCR signaling in na&#xef;ve CD4+ T cells	Major histocompatibility complex class II antigen presentation pathway
+200186	200027	RP	Calcium signaling in the CD4+ TCR pathway	TCR signaling in na&#xef;ve CD4+ T cells
+200152	200027	RP	JNK signaling in the CD4+ TCR pathway	TCR signaling in na&#xef;ve CD4+ T cells
+200104	200027	RP	Ras signaling in the CD4+ TCR pathway	TCR signaling in na&#xef;ve CD4+ T cells
+200224	86	RP	Regulation of retinoblastoma protein	Cell cycle pathways, mitotic
+200096	180	SP	mTOR signaling pathway	mTOR signaling pathways
+200089	106	SP	IL1-mediated signaling events	Extrinsic apoptotic pathways
+200036	356	RP	HIF-2-alpha transcription factor network	Oxygen homeostasis pathway
+200128	684	SP	amb2 Integrin signaling	Integrin mediated cell-extracellular matrix signaling pathways
+200075	486	SP	TCR signaling in na&#xef;ve CD8+ T cells	Major histocompatibility complex class I antigen presentation pathway
+200216	200075	SP	Downstream signaling in na&#xef;ve CD8+ T cells	TCR signaling in na&#xef;ve CD8+ T cells
+200184	467	SP	EPO signaling pathway	Peptide and protein hormone signaling pathways
+200018	198	SP	p38 MAPK signaling pathway	p38 MAPK signaling pathways
+200042	654	SP	Signaling events mediated by PTP1B	Tyrosine-specific phosphatase mediated signaling pathways
+200095	200073	SP	Arf6 downstream pathway	Arf6 signaling events
+200124	541	SP	Sphingosine 1-phosphate (S1P) pathway	Signaling pathways involving second messengers
+200116	595	SP	Class I PI3K signaling events	Phosphatidylinositol 3-kinase signaling pathway
+200062	650	SP	Reelin signaling pathway	Signaling pathways pertinent to development
+200062	59	SP	Reelin signaling pathway	Signaling pathways pertinent to the brain
+200208	86	RP	Polo-like kinase signaling events in the cell cycle	Cell cycle pathways, mitotic
+200081	59	SP	Circadian rhythm pathway	Signaling pathways pertinent to the brain
+200063	59	SP	Presenilin action in Notch and Wnt signaling	Signaling pathways pertinent to the brain
+200103	200208	RP	PLK1 signaling events	Polo-like kinase signaling events in the cell cycle
+200206	85	RP	BARD1 signaling events	Pathways of replication, repair, gene expression, protein biosynthesis
+200058	86	RP	Signaling by Aurora kinases	Cell cycle pathways, mitotic
+200032	100	RP	E2F transcription factor network	Transcription pathways
+200142	647	SP	FOXM1 transcription factor network	Forkhead signaling pathways
+200031	499	SP	Canonical NF-kappaB pathway	Nuclear Factor Kappa B signaling pathways
+3	1	SP	Signaling pathways	
+4	1	RP	Regulatory pathways	
+170	168	SP	Epidermal growth factor/neuregulin signaling pathways	Growth factor signaling pathways
+651	4	RP	Aging pathway	Regulatory pathways
+275	4	RP	Cell death pathways	Regulatory pathways
+9	275	RP	Apoptotic cell death pathways	Cell death pathways
+236	577	SP	Tumor necrosis factor superfamily mediated signaling pathways	Cytokine and chemokine mediated signaling pathways
+106	9	RP	Extrinsic apoptotic pathways	Apoptotic cell death pathways
+355	4	RP	Homeostasis pathway	Regulatory pathways
+23	4	RP	Immune response pathways	Regulatory pathways
+314	3	SP	Calcium/calmodulin dependent signaling pathway	Signaling pathways
+315	314	SP	Calcineurin signaling pathway	Calcium/calmodulin dependent signaling pathway
+577	3	SP	Cytokine and chemokine mediated signaling pathways	Signaling pathways
+648	3	SP	Cell adhesion signaling pathways	Signaling pathways
+512	577	SP	Interleukin mediated signaling pathways	Cytokine and chemokine mediated signaling pathways
+332	648	SP	Cell-cell signaling pathways	Cell adhesion signaling pathways
+333	332	SP	Cadherins signaling pathways	Cell-cell signaling pathways
+322	332	SP	Ephrin - ephrin receptor bidirectional signaling axis	Cell-cell signaling pathways
+683	332	SP	Integrin mediated cell-cell signaling pathways	Cell-cell signaling pathways
+646	648	SP	Cell-extracellular matrix signaling pathways	Cell adhesion signaling pathways
+684	646	SP	Integrin mediated cell-extracellular matrix signaling pathways	Cell-extracellular matrix signaling pathways
+659	646	SP	Syndecan signaling pathway	Cell-extracellular matrix signaling pathways
+681	236	SP	FasL mediated signaling pathway	Tumor necrosis factor superfamily mediated signaling pathways
+233	236	SP	Tumor necrosis factor mediated signaling pathway	Tumor necrosis factor superfamily mediated signaling pathways
+682	236	SP	Trail mediated signaling pathway	Tumor necrosis factor superfamily mediated signaling pathways
+656	655	SP	Glycoprotein signaling pathway	Glycoconjugated protein signaling pathway
+201	8	SP	Canonical Wnt signaling pathways	Wnt signaling pathways
+597	8	SP	Non-canonical Wnt signaling pathways	Wnt signaling pathways
+657	655	SP	Proteoglycan signaling pathway	Glycoconjugated protein signaling pathway
+180	85	RP	mTOR signaling pathways	Pathways of replication, repair, gene expression, protein biosynthesis
+328	168	SP	Fibroblast growth factor signaling pathway	Growth factor signaling pathways
+571	168	SP	Neurotrophic factor signaling pathways	Growth factor signaling pathways
+297	168	SP	Platelet-derived growth factor signaling pathways	Growth factor signaling pathways
+329	168	SP	Transforming growth factor-beta superfamily mediated signaling pathway	Growth factor signaling pathways
+490	206	SP	Transforming growth factor-beta Smad dependent signaling pathway	Transforming growth factor-beta signaling pathway
+330	329	SP	Bone morphogenetic proteins signaling pathway	Transforming growth factor-beta superfamily mediated signaling pathway
+469	465	SP	Lipid hormone signaling pathways	Hormone signaling pathways
+238	467	SP	Insulin-like growth factor signaling pathway	Peptide and protein hormone signaling pathways
+200179	100	RP	Regulation of cytoplasmic and nuclear SMAD2/3 signaling	Transcription pathways
+507	567	SP	Estrogen signaling pathway	Sex steroids signaling pathways
+200180	200208	RP	PLK2 and PLK4 events	Polo-like kinase signaling events in the cell cycle
+200218	200208	RP	PLK3 signaling events	Polo-like kinase signaling events in the cell cycle
+564	567	SP	Androgen signaling pathway	Sex steroids signaling pathways
+566	468	SP	Corticosteroid signaling pathway	Steroid hormone signaling pathways
+200207	100	RP	p53 pathway	Transcription pathways
+200036	100	RP	HIF-2-alpha transcription factor network	Transcription pathways
+200224	100	RP	Regulation of retinoblastoma protein	Transcription pathways
+200154	100	RP	C-MYB transcription factor network	Transcription pathways
+200143	100	RP	EPHA forward signaling	Transcription pathways
+200120	200207	RP	Direct p53 effectors	p53 pathway
+200003	200179	RP	Regulation of nuclear SMAD2/3 signaling	Regulation of cytoplasmic and nuclear SMAD2/3 signaling
+200153	332	SP	Nephrin/Neph1 signaling in the kidney podocyte	Cell-cell signaling pathways
+200129	684	SP	Integrins in angiogenesis	Integrin mediated cell-extracellular matrix signaling pathways
+200191	684	SP	a6b1 and a6b4 Integrin signaling	Integrin mediated cell-extracellular matrix signaling pathways
+200184	577	SP	EPO signaling pathway	Cytokine and chemokine mediated signaling pathways
+200176	577	SP	CXCR3-mediated signaling events	Cytokine and chemokine mediated signaling pathways
+200037	236	SP	CD40/CD40L signaling	Tumor necrosis factor superfamily mediated signaling pathways
+200141	170	SP	ErbB2/ErbB3 signaling events	Epidermal growth factor/neuregulin signaling pathways
+200160	170	SP	ErbB receptor signaling network	Epidermal growth factor/neuregulin signaling pathways
+200101	170	SP	EGF receptor (ErbB1) signaling pathway	Epidermal growth factor/neuregulin signaling pathways
+200029	331	SP	ALK1 pathway	Activin signaling pathways
+200149	200029	SP	ALK1 signaling events	ALK1 pathway
+200161	200029	SP	ALK2 signaling events	ALK1 pathway
+200178	200189	SP	VEGFR1 specific signals	Signaling events mediated by VEGFR1 and VEGFR2
+200132	200165	SP	RXR and RAR heterodimerization with other nuclear receptor	Retinoic acid receptors-mediated signaling
+200169	122	SP	Signaling events mediated by the Hedgehog family	Hedgehog signaling pathway
+200173	200169	SP	Hedgehog signaling events mediated by Gli proteins	Signaling events mediated by the Hedgehog family
+468	469	SP	Steroid hormone signaling pathways	Lipid hormone signaling pathways
+565	469	SP	Eicosanoids signaling pathway	Lipid hormone signaling pathways
+541	3	SP	Signaling pathways involving second messengers	Signaling pathways
+650	3	SP	Signaling pathways pertinent to development	Signaling pathways
+616	236	SP	Altered tumor necrosis factor superfamily mediated signaling pathway	Tumor necrosis factor superfamily mediated signaling pathways
+653	652	SP	Serine/threonine-specific phophatase mediated signaling pathway	Phosphatase mediated signaling pathways
+59	3	SP	Signaling pathways pertinent to the brain	Signaling pathways
+389	59	SP	Altered pathway pertinent to signaling in the brain	Signaling pathways pertinent to the brain
+8	650	SP	Wnt signaling pathways	Signaling pathways pertinent to development
+232	595	SP	Phosphatidylinositol 3-kinase-Akt signaling pathway	Phosphatidylinositol 3-kinase signaling pathway
+356	355	RP	Oxygen homeostasis pathway	Homeostasis pathway
+85	4	RP	Pathways of replication, repair, gene expression, protein biosynthesis	Regulatory pathways
+486	235	RP	Major histocompatibility complex class I antigen presentation pathway	Adaptive immune response pathways
+235	23	RP	Adaptive immune response pathways	Immune response pathways
+681	106	SP	FasL mediated signaling pathway	Extrinsic apoptotic pathways
+682	106	SP	Trail mediated signaling pathway	Extrinsic apoptotic pathways
+100	85	RP	Transcription pathways	Pathways of replication, repair, gene expression, protein biosynthesis
+499	100	RP	Nuclear Factor Kappa B signaling pathways	Transcription pathways
+616	236	SP	Altered tumor necrosis factor superfamily mediated signaling pathway	Tumor necrosis factor superfamily mediated signaling pathways
+168	3	SP	Growth factor signaling pathways	Signaling pathways
+465	3	SP	Hormone signaling pathways	Signaling pathways
+180	3	SP	mTOR signaling pathways	Signaling pathways
+7	3	SP	Mitogen activated protein kinase signaling pathways	Signaling pathways
+315	653	SP	Calcineurin signaling pathway	Serine/threonine-specific phophatase mediated signaling pathway
+655	3	SP	Glycoconjugated protein signaling pathway	Signaling pathways
+8	656	SP	Wnt signaling pathways	Glycoprotein signaling pathway
+658	657	SP	Glypican signaling pathway	Proteoglycan signaling pathway
+654	652	SP	Tyrosine-specific phosphatase mediated signaling pathways	Phosphatase mediated signaling pathways
+489	168	SP	Angiopoietin signaling pathway	Growth factor signaling pathways
+238	168	SP	Insulin-like growth factor signaling pathway	Growth factor signaling pathways
+578	168	SP	Scatter factor/hepatocyte growth factor signaling pathway	Growth factor signaling pathways
+243	168	SP	Vascular endothelial growth factor signaling pathways	Growth factor signaling pathways
+206	329	SP	Transforming growth factor-beta signaling pathway	Transforming growth factor-beta superfamily mediated signaling pathway
+200023	100	RP	Signaling events mediated by HDAC Class II	Transcription pathways

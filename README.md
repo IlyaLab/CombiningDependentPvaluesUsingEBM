@@ -6,6 +6,8 @@ Author: William Poole (william.poole@systemsbiology.org)
 Ported to Matlab: Theo Knijnenburg (tknijnen@systemsbiology.org)
 Ported to R: David L Gibbs (dgibbs@systemsbiology.org)
 Created: June 2015
+Copyright 2015, Institute for Systems Biology.
+Licensed under the Apache License, Version 2.0
 ```
 
 Python 

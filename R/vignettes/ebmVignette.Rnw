@@ -1,0 +1,270 @@
+%\VignetteIndexEntry{EmpericalBrownsMethod}
+%\VignettePackage{EmpericalBrownsMethod}
+%\VignetteEngine{utils::Sweave}
+
+\documentclass{article}
+
+<<style, eval=TRUE, echo=FALSE, results=tex>>=
+BiocStyle::latex()
+@
+
+\newcommand{\exitem}[3]{%
+  \item \texttt{\textbackslash#1\{#2\}} #3 \csname#1\endcsname{#2}.%
+}
+
+\title{\Bioconductor{} \LaTeX{} Style}
+\author{William Poole, David Gibbs, Theo Knijnenburg}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{}
+
+\section{Authoring Sweave / \LaTeX{} package vignettes}
+
+To use with Sweave, add the following to your package \file{DESCRIPTION} file:
+\begin{verbatim}
+    Suggests: BiocStyle
+\end{verbatim}
+and add this code chunk to the preamble (between the
+\verb+\documentclass{article}+ and \verb+\begin{document}+ latex
+commands) of your \texttt{.Rnw} file:
+\begin{verbatim}
+    <<style-Sweave, eval=TRUE, echo=FALSE, results=tex>>=
+    BiocStyle::latex()
+    @
+\end{verbatim}
+
+To use with \CRANpkg{knitr}, add the following to the \file{DESCRIPTION} file:
+\begin{verbatim}
+    VignetteBuilder: knitr
+    Suggests: BiocStyle, knitr
+\end{verbatim}
+this to the top of the \texttt{.Rnw} file:
+\begin{verbatim}
+    %\VignetteEngine{knitr::knitr}
+\end{verbatim}
+and this to the preamble:
+\begin{verbatim}
+    <<style-knitr, eval=TRUE, echo=FALSE, results="asis">>=
+    BiocStyle::latex()
+    @
+\end{verbatim}
+See \Rcode{?latex} for additional options. \Biocpkg{BiocStyle}
+automatically attaches the following \LaTeX{} packages:
+\texttt{color}, \texttt{enumitem}, \texttt{fancyhdr},
+\texttt{geometry}, \texttt{hyperref}, \texttt{parskip}, \texttt{sectsty}.
+
+Provided the package has been installed, a convenient way to view the
+vignette as it is being written is with the command
+\begin{verbatim}
+    R CMD Sweave --pdf vignette.Rnw
+\end{verbatim}
+A short-cut useful for checking the \LaTeX{} portion of vignettes is
+to toggle evaluation of code chunks to \Rcode{FALSE}
+\begin{verbatim}
+    SWEAVE_OPTIONS="eval=FALSE" R CMD Sweave --pdf vignette.Rnw
+\end{verbatim}
+When using \CRANpkg{knitr}, the command to process the vignette is
+\begin{verbatim}
+    R CMD Sweave --engine=knitr::knitr --pdf vignette.Rnw
+\end{verbatim}
+By default, \CRANpkg{knitr} automatically caches results of vignette
+chunks, greatly accelerating the turnaround time required for
+edits. Both the default and \CRANpkg{knitr} incantations create PDF
+files using \software{texi2dvi --pdf}; many versions of this software
+incorrectly display non-breaking spaces as a tilde, \verb|~|. This can be
+remedied (as on the \Bioconductor{} build system) with a final run of
+\begin{verbatim}
+    R CMD texi2dvi --pdf vignette.tex
+    R CMD pdflatex vignette.tex
+\end{verbatim}
+
+\section{Style macros}
+\Biocpkg{BiocStyle} introduces the following additional markup styling commands
+useful in typical \Bioconductor{} vignettes.\\\\
+%%
+Software:
+\begin{itemize}
+  \item \verb+\R{}+ and \verb+\Bioconductor{}+ to reference \R{} software and
+  the \Bioconductor{} project.
+  \exitem{software}{GATK}{to reference third-party software, e.g.,}
+\end{itemize}
+%\vspace{1em}
+%%
+Packages:
+\begin{itemize}
+  \exitem{Biocpkg}{IRanges}{for \Bioconductor{} software packages, including a
+  link to the release version landing page,}
+  \exitem{Biocannopkg}{org.Hs.eg.db}{for \Bioconductor{} annotation packages,
+  including a link to the release version landing page,}
+  \exitem{Biocexptpkg}{parathyroidSE}{for \Bioconductor{} experiment data
+  packages, including a link to the release version landing page,}
+  \exitem{CRANpkg}{data.table}{for \R{} packages available on CRAN, including
+  a link to the FHCRC CRAN mirror landing page,}
+  \exitem{Githubpkg}{rstudio/rmarkdown}{for \R{} packages available on GitHub, including a link to the package repository,}
+  \exitem{Rpackage}{MyPkg}{for \R{} packages that are \emph{not} available on
+  \Bioconductor{} or CRAN,}
+\end{itemize}
+%\vspace{1em}
+%%
+Code:
+\begin{itemize}
+  \exitem{Rfunction}{findOverlaps}{for functions}
+  \exitem{Robject}{olaps}{for variables}
+  \exitem{Rclass}{GRanges}{when referring to a formal class}
+  \exitem{Rcode}{log(x)}{for \R{} code,}
+\end{itemize}
+%\vspace{1em}
+%%
+Communication:
+\begin{itemize}
+  \exitem{bioccomment}{additional information for the user}{communicates}
+  \exitem{warning}{common pitfalls}{signals}
+  \exitem{fixme}{incomplete functionality}{provides an indication of}
+\end{itemize}
+%\vspace{1em}
+%%
+General:
+\begin{itemize}
+  \exitem{email}{user@domain.com}{to provide a linked email address,}
+  \exitem{file}{script.R}{for file names and file paths}
+\end{itemize}
+
+%---------------------------------------------------------
+\section{Title, running headers, and table of contents}
+%---------------------------------------------------------
+
+Create a title and running headers by defining the \verb+\bioctitle+
+and \verb+\author+ commands in the preamble
+\begin{verbatim}
+    \bioctitle[Short title for headers]{Full title for title page}
+    %% also: \bioctitle{Title used for both header and title page}
+    %% or... \title{Title used for both header and title page}
+    \author{Iman Author\footnote{iman@author.org}}
+\end{verbatim}
+Use \verb+\maketitle+ at the start of the document to create the title
+in the document.
+
+Use \verb+\tableofcontents+ for a hyperlinked table of contents,
+\verb+\section+, \verb+\subsection+, \verb+\subsubsection+ for
+structuring your vignette.
+
+Formatting of subsections and subsubsections are as follows.
+
+\subsection{This is a subsection}
+
+\subsubsection{This is a subsubsection}
+
+%---------------------------------------------------------
+\section{Figures}\label{incfig}
+%---------------------------------------------------------
+
+Besides the usual \LaTeX{} capabilities (\verb+figure+ environment and
+\verb+\includegraphics+ command), \file{Bioconductor.sty} defines a
+macro \verb+\incfig[placement]{filename}{width}{shorttitle}{extendedcaption}+,
+which expects four arguments:
+\begin{description}%[font=\texttt]
+\item[filename] The name of the figure file, also used as the label by
+  which the float can be referred to by \verb+\ref{}+. Some
+  \software{Sweave} and \CRANpkg{knitr} options place figures in a
+  subdirectory; unless \Rcode{short.fignames=TRUE} is set the full file name,
+  including the subdirectory and any prefixes, should be provided. By default,
+  these are \file{<sweavename>-} for \Rpackage{Sweave} and \file{figure/} for
+  \CRANpkg{knitr}. Please note the different naming scheme used by
+  \Rpackage{knitr}: figure files are named \file{<chunkname>-i} where \emph{i}
+  is the number of the plot generated in the chunk.
+\item[width] Figure width.
+\item[shorttitle] A short description, used in the list of figures and
+  printed in bold as the first part of the caption.
+\item[extendedcaption] Continuation of the figure caption.
+\end{description}
+The optional \textbf{placement} specifier controls where the figure is placed
+on page and takes the usual values allowed by \LaTeX{} floats, i.e., a list
+containing \verb+t+, \verb+b+, \verb+p+, or \verb+h+, where letters enumerate
+permitted placements. If no placement specifier is given, the default
+\verb+tbp+ is assumed.
+
+For \verb+incfig+ with Sweave, use
+\begin{verbatim}
+    <<figureexample, fig=TRUE, include=FALSE, width=4.2, height=4.6>>=
+    v = seq(0, 60i, length=1000)
+    plot(abs(v)*exp(v), type="l", col="Royalblue")
+    @
+    \incfig{LatexStyle-figureexample}{0.25\textwidth}{A curve.}
+      {The code that creates this figure is shown in the code chunk.}
+    as shown in Figure~\ref{LatexStyle-figureexample}.
+\end{verbatim}
+This results in
+<<figureexample, fig=TRUE, include=FALSE, width=4.2, height=4.6>>=
+v = seq(0, 60i, length=1000)
+plot(abs(v)*exp(v), type="l", col="Royalblue")
+@
+
+\incfig{LatexStyle-figureexample}{0.25\textwidth}{A curve.}
+  {The code that creates this figure is shown in the code chunk.}
+as shown in Figure~\ref{LatexStyle-figureexample}.  When the option
+\Rcode{short.fignames} is set to \Rcode{TRUE}, figure names used by
+\verb+\incfig+ and \verb+\ref+ do not contain any prefix and are
+identical to the corresponding code chunk labels (plus figure number in case of
+\Rpackage{knitr}). For example, in Sweave the respective code for the above
+example would be \verb+\incfig{figureexample}{...}{...}{...}+ and
+\verb+\ref{figureexample}+, while in \Rpackage{knitr} these are expected to be
+\verb+\incfig{figureexample-1}{...}{...}{...}+ and
+\verb+\ref{figureexample-1}+.
+
+For \verb+\incfig+ with \Rpackage{knitr}, use the option
+\Rcode{fig.show='hide'} rather than \Rcode{include=FALSE}. The
+\Rpackage{knitr}-equivalent code for
+Figure~\ref{LatexStyle-figureexample} is:
+\begin{verbatim}
+    <<figureexample, fig.show='hide', fig.width=4.2, fig.height=4.6>>=
+    v = seq(0, 60i, length=1000)
+    plot(abs(v)*exp(v), type="l", col="Royalblue")
+    @
+\end{verbatim}
+Note the difference in option names setting the figure width and
+height compared to \Rpackage{Sweave}.  Unless
+\Rcode{short.fignames=TRUE} is set, use the default \file{figure/}
+prefix when inserting and referring to figures, e.g.:
+\begin{verbatim}
+    \incfig{figure/figureexample-1}{0.25\textwidth}{A curve.}
+      {The code that creates this figure is shown in the code chunk.}
+\end{verbatim}
+A custom prefix for figure file names can be passed to
+\Rfunction{latex} using the \Rcode{fig.path} option. When
+\Rcode{short.fignames=TRUE}, figures can be referred to directly by
+code chunk labels, as described earlier in this section.
+
+%---------------------------------------------------------
+\section{Bibliography}
+%---------------------------------------------------------
+
+\Rcode{BiocStyle::latex()} has default argument
+\Rcode{use.unsrturl=TRUE} to automatically format bibliographies using
+\software{natbib}'s unsrturl style. There is no need to explicitly
+include \software{natbib}, and it is an error to use a
+\verb+\bibliographystyle+ command. The \software{unsrturl.bst} format,
+e.g., \cite{Gentleman:2004, 10.1371/journal.pcbi.1003118}, supports
+hyperlinks to DOI and PubMed IDs but not \verb+\citet+ or
+\verb+\citep+.
+
+To use a bibliography style different from \verb+unsrturl+, set
+\Rcode{use.unsrturl=FALSE} and follow normal \LaTeX{} conventions.
+
+%---------------------------------------------------------
+\section{Session info}
+%---------------------------------------------------------
+
+Here is the output of \Rfunction{sessionInfo} on the system on which
+this document was compiled:
+<<sessionInfo, results=tex, print=TRUE, eval=TRUE>>=
+toLatex(sessionInfo())
+@
+
+\bibliography{Bioc}
+
+\end{document}

@@ -1,0 +1,12 @@
+Package: EmpericalBrownsMethod
+Title: Uses Brown's method to combine p-values from dependent tests.
+Version: 0.0.0.9000
+Authors: William Poole
+Maintainer: David Gibbs <dgibbs@systemsbiology.org>
+Description: Combining P-values from multiple statistical tests is common in bioinformatics. However, this procedure is non-trivial for dependent P-values. This package implements an empirical adaptation of Brown’s Method (an extension of Fisher’s Method) for combining dependent P-values which is appropriate for highly correlated data sets found in high-throughput biological experiments.
+Depends: R (>= 3.2.0)
+Suggests: BiocStyle
+License: Apache License, Version 2.0
+VignetteBuilder: knitr
+URL: https://github.com/IlyaLab/CombiningDependentPvaluesUsingEBM.git
+LazyData: true

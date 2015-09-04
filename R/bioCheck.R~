@@ -1,0 +1,3 @@
+library(BiocCheck)
+pathToPkg <- file.path("..","EmpericalBrownsMethod")
+BiocCheck(pathToPkg)

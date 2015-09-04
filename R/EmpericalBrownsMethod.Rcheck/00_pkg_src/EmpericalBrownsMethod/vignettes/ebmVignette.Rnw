@@ -1,0 +1,43 @@
+%\VignetteIndexEntry{EmpericalBrownsMethod}
+%\VignettePackage{EmpericalBrownsMethod}
+%\VignetteEngine{utils::Sweave}
+
+\documentclass{article}
+
+<<style, eval=TRUE, echo=FALSE, results=tex>>=
+BiocStyle::latex()
+@
+
+\newcommand{\exitem}[3]{%
+  \item \texttt{\textbackslash#1\{#2\}} #3 \csname#1\endcsname{#2}.%
+}
+
+\title{\Bioconductor{} \LaTeX{} Style}
+\author{William Poole, David Gibbs, Theo Knijnenburg}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Combining P-values}
+
+\begin{verbatim}
+    library(EmpiricalBrownsMethod)
+\end{verbatim}
+
+\Biocpkg{EmpiricalBrownsMethod} is a method for combining p-values.
+
+%---------------------------------------------------------
+\section{Session info}
+%---------------------------------------------------------
+
+Here is the output of \Rfunction{sessionInfo} on the system on which
+this document was compiled:
+<<sessionInfo, results=tex, print=TRUE, eval=TRUE>>=
+toLatex(sessionInfo())
+@
+
+
+\end{document}

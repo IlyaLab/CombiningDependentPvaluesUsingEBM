@@ -1,0 +1,61 @@
+
+R version 3.2.1 (2015-06-18) -- "World-Famous Astronaut"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "EmpericalBrownsMethod"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> library('EmpericalBrownsMethod')
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("empiricalBrownsMethod")
+> ### * empiricalBrownsMethod
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: empiricalBrownsMethod
+> ### Title: EmpiricalBrownsMethod
+> ### Aliases: empiricalBrownsMethod
+> ### Keywords: file
+> 
+> ### ** Examples
+> 
+> ## restore the saved values to the current environment
+>   data(testData)
+> #  glypGenes <- pathways$gene[pathways$pathway == "GLYPICAN 3 NETWORK"];
+> #  glypPvals <- allPvals$pvalue.with.CHD4[allPvals$gene %in% glypGenes];
+> #  glypDat   <- dat[dat$V1 %in% glypGenes, 2:ncol(dat)];
+> #  print(empiricalBrownsMethod(data_matrix=glypDat, p_values=glypPvals, extra_info=T));
+> 
+> 
+> 
+> ### * <FOOTER>
+> ###
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  0.062 0.004 0.066 0 0 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')

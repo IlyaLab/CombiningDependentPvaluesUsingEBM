@@ -1,0 +1,12 @@
+% File inst/doc/randData.Rd
+\name{randData}
+\docType{data}
+\alias{randData}
+\title{Data used in tests}
+\description{
+  This data is used in the unit tests and shows a usage example.
+}
+\usage{testData}
+\format{data.frame}
+\source{GEO}
+\keyword{datasets}

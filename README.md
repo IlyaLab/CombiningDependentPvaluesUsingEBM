@@ -16,7 +16,7 @@ The main script for combining P-values is [EmpiricalBrownsMethod.py](../master/P
 
 R 
 -------------
-The main script for combining P-values is [ebm.R](../master/R/ebm.R). To run some examples, set your working directory to [the R folder in this repository] (../master/R) and run WorkFlow.R (source('WorkFlow.R')).
+The main script for combining P-values is [ebm.R](../master/R/EmpericalBrownsMethod/R/ebm.R). To run some examples, set your working directory to [the R folder in this repository] (../master/R) and run WorkFlow.R (source('WorkFlow.R')).
 
 Matlab 
 -------------

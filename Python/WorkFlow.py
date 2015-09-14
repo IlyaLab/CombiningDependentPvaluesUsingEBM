@@ -19,10 +19,9 @@ Email: william.poole@systemsbiology.org / tknijnen@systemsbiology.org
 Created: June 2015
 """
 
-from numpy import *
+import numpy as np
 from EmpiricalBrownsMethod import *
 from scipy.stats import pearsonr
-import PathwayParser as PP
 
 
 
@@ -38,7 +37,7 @@ data = []
 for line in raw_data:
     L = line.replace("\n", "").split("\t")
     if "Independent Var" in L[0]:
-        indV = array([float(l) for l in L[1:]])
+        indV = np.array([float(l) for l in L[1:]])
     else:
         data.append([float(l) for l in L[1:]])
 
@@ -62,18 +61,14 @@ print EmpiricalBrownsMethod(data, pvals, extra_info = True)
 #The P-values for each set of genes in each pathway are combined using our method or fishers method
 
 pathways = ['FOXA1 TRANSCRIPTION FACTOR NETWORK', 'SUMOYLATION BY RANBP2 REGULATES TRANSCRIPTIONAL REPRESSION', 'GLYPICAN 3 NETWORK']
-gene_sublist = []
-for p in pathways:
-    gene_sublist+=PP.AllPathwayGeneDict[p]
 
-gene_sublist = list(set(gene_sublist))
 PathwayGeneDict = {p:[] for p in pathways}
 #load pathways:
 f = open("../Data/pathways.tsv")
 f.readline()
 gene_list = []
 for line in f:
-    L = line.replace("\n", "").split("\t")
+    L = line.replace("\n", "").replace("\r", "").split("\t")
     PathwayGeneDict[L[0]].append(L[1])
     gene_list.append(L[1])
 
@@ -84,20 +79,21 @@ PValueDict = {}
 f = open("../Data/CDH4_Pvalues.tsv")
 f.readline()
 for line in f:
-    L = line.replace("\n", "").split("\t")
+    L = line.replace("\n", "").replace("\r", "").split("\t")
     PValueDict[L[0]] = float(L[1])
 f.close()
 GeneData = {}
 FM = open("../Data/ReducedFeatureMatrix.tsv")
 for line in FM:
-    L = line.replace("\n", "").split("\t")
+    L = line.replace("\n", "").replace("\r", "").split("\t")
     GeneData[L[0]] = [float(l) for l in L[1:]]
 FM.close()
 
+
 for p in pathways:
     print "pathway:", p
-    DataMatrix = array([GeneData[g] for g in PathwayGeneDict[p] if g in GeneData])
-    Pvalues = array([PValueDict[g] for g in PathwayGeneDict[p] if g in PValueDict])
+    DataMatrix = np.array([GeneData[g] for g in PathwayGeneDict[p] if g in GeneData])
+    Pvalues = np.array([PValueDict[g] for g in PathwayGeneDict[p] if g in PValueDict])
     print EmpiricalBrownsMethod(DataMatrix, Pvalues, extra_info = True)
 
 

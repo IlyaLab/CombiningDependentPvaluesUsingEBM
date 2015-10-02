@@ -1,6 +1,6 @@
-allPvals	allPvals
-dat	dat
+allPvals	ebmTestData
+dat	ebmTestData
+ebmTestData	ebmTestData
 empiricalBrownsMethod	empiricalBrownsMethod
-pathways	pathways
-randData	randData
-testData	testData
+pathways	ebmTestData
+randData	ebmTestData

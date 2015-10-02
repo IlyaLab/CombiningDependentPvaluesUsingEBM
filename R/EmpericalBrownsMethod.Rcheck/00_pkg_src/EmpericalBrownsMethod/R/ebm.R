@@ -1,17 +1,24 @@
-# Copyright 2015, Institute for Systems Biology.
-# 
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-# 
-# http://www.apache.org/licenses/LICENSE-2.0
-# 
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-# 
+#Copyright (c) 2015, Institute for Systems Biology
+#
+#Permission is hereby granted, free of charge, to any person obtaining
+#a copy of this software and associated documentation files (the
+#"Software"), to deal in the Software without restriction, including
+#without limitation the rights to use, copy, modify, merge, publish,
+#distribute, sublicense, and/or sell copies of the Software, and to
+#permit persons to whom the Software is furnished to do so, subject to
+#the following conditions:
+
+#The above copyright notice and this permission notice shall be
+#included in all copies or substantial portions of the Software.
+
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+#EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+#MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+#NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+#LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+#OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+#WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#
 # Author: William Poole
 # Ported to R: David L Gibbs
 # Email: dgibbs@systemsbiology.org / william.poole@systemsbiology.org / tknijnen@systemsbiology.org
@@ -45,11 +52,11 @@ calculateCovariances <- function(data_matrix){
 #Input: A m x m numpy array of covariances between transformed data vectors and a vector of m p-values to combine.
 #Output: A combined P-value.
 #        If extra_info == True: also returns the p-value from Fisher's method, the scale factor c, and the new degrees of freedom from Brown's Method
-combinePValues <- function(covar_matrix, p_values, extra_info = F){
+combinePValues <- function(covar_matrix, p_values, extra_info = FALSE){
     N = ncol(covar_matrix) # number of samples
     df_fisher = 2.0*N
     Expected  = 2.0*N
-    cov_sum <- (2*sum(covar_matrix[lower.tri(covar_matrix, diag=F)]))
+    cov_sum <- (2*sum(covar_matrix[lower.tri(covar_matrix, diag=FALSE)]))
     Var = 4.0*N+cov_sum
     c = Var/(2.0*Expected)
     df_brown = (2.0*Expected^2)/Var
@@ -59,8 +66,8 @@ combinePValues <- function(covar_matrix, p_values, extra_info = F){
     }
     x = 2.0*sum( -log(p_values) )
 
-    p_brown = pchisq(df=df_brown, q=x/c, lower.tail=F)
-    p_fisher = pchisq(df=df_fisher, q=x, lower.tail=F)
+    p_brown = pchisq(df=df_brown, q=x/c, lower.tail=FALSE)
+    p_fisher = pchisq(df=df_fisher, q=x, lower.tail=FALSE)
 
     if (extra_info) {
         return(list(P_Brown=p_brown, P_Fisher=p_fisher, Scale_Factor_C=c, DF_Brown=df_brown))
@@ -74,7 +81,7 @@ combinePValues <- function(covar_matrix, p_values, extra_info = F){
 #       A vector of m P-values to combine. May be a list or of type numpy.array.
 #Output: A combined P-value.
 #        If extra_info == True: also returns the p-value from Fisher's method, the scale factor c, and the new degrees of freedom from Brown's Method
-empiricalBrownsMethod <- function(data_matrix, p_values, extra_info = F) {
+empiricalBrownsMethod <- function(data_matrix, p_values, extra_info = FALSE) {
   # inputs must be numeric
     covar_matrix = calculateCovariances(data_matrix)
     return(combinePValues(covar_matrix, p_values, extra_info))

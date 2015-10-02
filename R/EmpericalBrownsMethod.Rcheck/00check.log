@@ -1,9 +1,9 @@
-* using log directory ‘/Users/davidgibbs/Dropbox/Code/CombiningDependentPvaluesUsingEBM/R/EmpericalBrownsMethod.Rcheck’
+* using log directory ‘/Users/davidlgibbs/Dropbox/Code/CombiningDependentPvaluesUsingEBM/R/EmpericalBrownsMethod.Rcheck’
 * using R version 3.2.1 (2015-06-18)
 * using platform: x86_64-apple-darwin13.4.0 (64-bit)
 * using session charset: UTF-8
 * checking for file ‘EmpericalBrownsMethod/DESCRIPTION’ ... OK
-* this is package ‘EmpericalBrownsMethod’ version ‘0.1’
+* this is package ‘EmpericalBrownsMethod’ version ‘0.99.0’
 * package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... OK
@@ -17,11 +17,7 @@
 * checking installed package size ... OK
 * checking package directory ... OK
 * checking ‘build’ directory ... OK
-* checking DESCRIPTION meta-information ... NOTE
-Malformed Title field: should not end in a period.
-Non-standard license specification:
-  Apache License, Version 2.0
-Standardizable: FALSE
+* checking DESCRIPTION meta-information ... OK
 * checking top-level files ... OK
 * checking for left-over files ... OK
 * checking index information ... OK
@@ -33,7 +29,6 @@ Standardizable: FALSE
 * checking whether the package can be unloaded cleanly ... OK
 * checking whether the namespace can be loaded with stated dependencies ... OK
 * checking whether the namespace can be unloaded cleanly ... OK
-* checking loading without being on the library search path ... OK
 * checking dependencies in R code ... OK
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
@@ -50,7 +45,6 @@ Standardizable: FALSE
 * checking contents of ‘data’ directory ... OK
 * checking data for non-ASCII characters ... OK
 * checking data for ASCII and uncompressed saves ... OK
-* checking sizes of PDF files under ‘inst/doc’ ... OK
 * checking installed files from ‘inst/doc’ ... OK
 * checking files in ‘vignettes’ ... OK
 * checking examples ... OK
@@ -63,4 +57,4 @@ Standardizable: FALSE
 * checking re-building of vignette outputs ... OK
 * checking PDF version of manual ... OK
 * DONE
-Status: 1 NOTE
+Status: OK

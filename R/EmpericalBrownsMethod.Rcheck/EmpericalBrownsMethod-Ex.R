@@ -11,18 +11,18 @@ nameEx("empiricalBrownsMethod")
 flush(stderr()); flush(stdout())
 
 ### Name: empiricalBrownsMethod
-### Title: EmpiricalBrownsMethod
+### Title: The Empirical Browns Method For Combining P-values
 ### Aliases: empiricalBrownsMethod
-### Keywords: file
+### Keywords: multivariate
 
 ### ** Examples
 
 ## restore the saved values to the current environment
-  data(testData)
-#  glypGenes <- pathways$gene[pathways$pathway == "GLYPICAN 3 NETWORK"];
-#  glypPvals <- allPvals$pvalue.with.CHD4[allPvals$gene %in% glypGenes];
-#  glypDat   <- dat[dat$V1 %in% glypGenes, 2:ncol(dat)];
-#  print(empiricalBrownsMethod(data_matrix=glypDat, p_values=glypPvals, extra_info=T));
+  data(ebmTestData)
+  glypGenes <- pathways$gene[pathways$pathway == "GLYPICAN 3 NETWORK"]
+  glypPvals <- allPvals$pvalue.with.CHD4[match(glypGenes, allPvals$gene)];
+  glypDat   <- dat[match(glypGenes, dat$V1), 2:ncol(dat)];
+  empiricalBrownsMethod(data_matrix=glypDat, p_values=glypPvals, extra_info=TRUE);
 
 
 

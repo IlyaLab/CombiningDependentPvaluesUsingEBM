@@ -32,4 +32,4 @@ Set the system variable R_CHECK_TESTS to TRUE to run all the tests.
 > 
 > proc.time()
    user  system elapsed 
-  0.136   0.019   0.147 
+  0.281   0.044   0.302 

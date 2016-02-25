@@ -45,7 +45,10 @@ raw_data.close()
 data = np.array(data)
 pvals = [pearsonr(indV, data[i])[1] for i in range(data.shape[0])]
 transformed_data1 = TransformData(data[0, :])
+print "\n\nRandom Data, EMB"
 print EmpiricalBrownsMethod(data, pvals, extra_info = True)
+print "\nRandom Data, Kost's"
+print KostsMethod(data, pvals, extra_info = True)
 
 #Should give:
 #(0.72288173732954353, 0.86138425703434118, 2.4580096358564503, 8.1366646038518677)
@@ -91,11 +94,13 @@ FM.close()
 
 
 for p in pathways:
-    print "pathway:", p
+    print "\n\npathway:", p
     DataMatrix = np.array([GeneData[g] for g in PathwayGeneDict[p] if g in GeneData])
     Pvalues = np.array([PValueDict[g] for g in PathwayGeneDict[p] if g in PValueDict])
+    print "\nEBM"
     print EmpiricalBrownsMethod(DataMatrix, Pvalues, extra_info = True)
-
+    print "\nKosts"
+    print KostsMethod(DataMatrix, Pvalues, extra_info = True)
 
 #Should give:
 #pathway: FOXA1 TRANSCRIPTION FACTOR NETWORK
@@ -105,6 +110,3 @@ for p in pathways:
 #pathway: GLYPICAN 3 NETWORK
 #(4.8216794064099692e-07, 1.4387321406058163e-08, 1.2976927497874169, 10.788378067376447)
 #(Pbrown,Pfisger,Scale_Factor C,DFbrown)
-
-
-

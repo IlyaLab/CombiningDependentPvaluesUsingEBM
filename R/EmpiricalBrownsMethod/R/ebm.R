@@ -70,7 +70,7 @@ combinePValues <- function(covar_matrix, p_values, extra_info = FALSE){
     p_fisher = pchisq(df=df_fisher, q=x, lower.tail=FALSE)
 
     if (extra_info) {
-        return(list(P_Brown=p_brown, P_Fisher=p_fisher, Scale_Factor_C=c, DF_Brown=df_brown))
+        return(list(P_test=p_brown, P_Fisher=p_fisher, Scale_Factor_C=c, DF=df_brown))
     }
     else {
         return(p_brown)
@@ -88,3 +88,40 @@ empiricalBrownsMethod <- function(data_matrix, p_values, extra_info = FALSE) {
 }
 
 #
+
+#Input: An m x n data matrix with each of m rows representing a variable and each of n columns representing a sample. Should be of type numeric matrix
+#       A numeric vector of m P-values to combine.
+#Output: A combined P-value using Kost's Method.
+#        If extra_info == True: also returns the p-value from Fisher's method, the scale factor c, and the new degrees of freedom from Brown's Method
+kostsMethod <- function(data_matrix, p_values, extra_info = FALSE) {
+    covar_matrix <- calculateKostCovariance(data_matrix)
+    combinePValues(covar_matrix, p_values, extra_info = extra_info)
+}
+
+#Input correlation between two n x n data vectors.
+#Output: Kost's approximation of the covariance between the -log cumulative distributions. This is calculated with a cubic polynomial fit.
+kostPolyFit <- function(cor) {
+    a1 <- 3.263
+    a2 <- 0.710
+    a3 <- 0.027 #Kost cubic coeficients
+    (a1*cor + a2*cor^2 + a3*cor^3)
+}
+
+#Input: An m x n data matrix with each of m rows representing a variable and each of n columns representing a sample. Should be of type numeric matrix.
+#       Note: Method does not deal with missing values within the data.
+#Output: An m x m matrix of pairwise covariances between the data vectors calculated using Kost's polynomial fit and the pearson correlation function.
+calculateKostCovariance <- function(data_matrix) {
+    m = nrow(data_matrix)
+    covar_matrix = mat.or.vec(m, m)
+    for (i in 1:m) {
+        for (j in i:m) {
+            res0 <- cor.test(data_matrix[i,], data_matrix[j,])
+            cor <- res0$estimate
+            p_val <- res0$p.value
+            covar = kostPolyFit(cor)
+            covar_matrix[i, j] = covar
+            covar_matrix[j, i] = covar
+          }
+        }
+    return(covar_matrix)
+}

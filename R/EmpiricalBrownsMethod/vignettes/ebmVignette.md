@@ -40,6 +40,9 @@ glypDat   <- dat[match(glypGenes, dat$V1), 2:ncol(dat)];
 
 # the call to combine p-values
 empiricalBrownsMethod(data_matrix=glypDat, p_values=glypPvals, extra_info=TRUE);
+
+# Alternatively, to use Kost's methods
+kostsMethod(data_matrix=glypDat, p_values=glypPvals, extra_info=TRUE);
 ```
 
 ## References

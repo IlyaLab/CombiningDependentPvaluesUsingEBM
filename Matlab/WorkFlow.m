@@ -16,6 +16,7 @@
 % Ported to Matlab: Theo Knijnenburg
 % Email: william.poole@systemsbiology.org / tknijnen@systemsbiology.org
 % Created: June 2015
+% Updated: February 2016
 
 %% Initialize
 Init
@@ -28,7 +29,7 @@ D = importdata('../Data/RandomData_withoutheaders.tsv');
 %% Pearson correlation
 [R,P] = corr(D(1,:)',D(2:end,:)');
 
-%% Emperical Browns Methods
+%% Emperical Browns Method
 data_matrix = D(2:end,:);
 p_values = P;
 [Pbrown,Pfisher,Cbrown,DFbrown] = EmpiricalBrownsMethod(data_matrix, p_values)
@@ -54,6 +55,30 @@ p_values = P;
 % 
 %     8.1367
 
+%% Kosts Method
+[Pkost,Pfisher,Ckost,DFkost] = KostsMethod(data_matrix, p_values)
+
+%% Should give...
+
+% Pkost =
+% 
+%     0.7018
+% 
+% 
+% Pfisher =
+% 
+%     0.8614
+% 
+% 
+% Ckost =
+% 
+%     2.8144
+% 
+% 
+% DFkost =
+% 
+%     7.1063
+
 
 %% Load TCGA dataset
 % parseTCGAdata
@@ -70,11 +95,12 @@ for p = 1:size(Pathways,1);
     
     display(Pathways{p,1});
     [Pbrown,Pfisher,Cbrown,DFbrown] = EmpiricalBrownsMethod(data_matrix, p_values)
-    
+    [Pkost,Pfisher,Ckost,DFkost] = KostsMethod(data_matrix, p_values)
 end
 
 
 %% Should give...
+
 % FOXA1 TRANSCRIPTION FACTOR NETWORK
 % 
 % Pbrown =
@@ -95,6 +121,26 @@ end
 % DFbrown =
 % 
 %    21.3285
+% 
+% 
+% Pkost =
+% 
+%    3.1577e-57
+% 
+% 
+% Pfisher =
+% 
+%   4.0434e-139
+% 
+% 
+% Ckost =
+% 
+%     2.5009
+% 
+% 
+% DFkost =
+% 
+%    23.1920
 % 
 % GLYPICAN 3 NETWORK
 % 
@@ -117,6 +163,26 @@ end
 % 
 %    10.7884
 % 
+% 
+% Pkost =
+% 
+%    7.5708e-07
+% 
+% 
+% Pfisher =
+% 
+%    1.4387e-08
+% 
+% 
+% Ckost =
+% 
+%     1.3490
+% 
+% 
+% DFkost =
+% 
+%    10.3777
+% 
 % SUMOYLATION BY RANBP2 REGULATES TRANSCRIPTIONAL REPRESSION
 % 
 % Pbrown =
@@ -137,7 +203,26 @@ end
 % DFbrown =
 % 
 %    18.3869
-
+% 
+% 
+% Pkost =
+% 
+%    2.0949e-39
+% 
+% 
+% Pfisher =
+% 
+%    6.4438e-45
+% 
+% 
+% Ckost =
+% 
+%     1.1494
+% 
+% 
+% DFkost =
+% 
+%    17.4011
 
 
 

@@ -16,8 +16,9 @@
 # Ported to R: David L Gibbs
 # Email: dgibbs@systemsbiology.org / william.poole@systemsbiology.org / tknijnen@systemsbiology.org
 # Created: June 2015
+# Updated: February 2016
 
-source("EmpericalBrownsMethod/R/ebm.R")
+source("EmpiricalBrownsMethod/R/ebm.R")
 options(digits=16)
 
 # Test with artificical data
@@ -43,6 +44,23 @@ print("****************************************************************")
 #
 #$DF_Brown
 #[1] 8.136664603851868
+
+print(kostsMethod(data_matrix=as.matrix(rd), p_values=pvals, extra_info=T))
+print("****************************************************************")
+
+#Should give:
+# $P_test
+# [1] 0.701752883272515
+# 
+# $P_Fisher
+# [1] 0.8613842570343421
+# 
+# $Scale_Factor_C
+# [1] 2.814405567447344
+# 
+# $DF
+# [1] 7.106296345959808
+
 
 # Test with cancer data #
 
@@ -70,6 +88,22 @@ print("****************************************************************")
 #
 #$DF_Brown
 #[1] 10.78837806737645
+
+print(kostsMethod(data_matrix=as.matrix(glypDat), p_values=glypPvals, extra_info=T))
+print("****************************************************************")
+
+#Should give:
+# $P_test
+# [1] 7.570776008807138e-07
+# 
+# $P_Fisher
+# [1] 1.438732140605804e-08
+# 
+# $Scale_Factor_C
+# [1] 1.349048766471012
+# 
+# $DF
+# [1] 10.3776826664485
 
 print("SUMO Reg")
 sumoGenes <- pathways$gene[pathways$pathway == "SUMOYLATION BY RANBP2 REGULATES TRANSCRIPTIONAL REPRESSION"]

@@ -1,2 +1,4 @@
 exportPattern("empiricalBrownsMethod")
 exportPattern("kostsMethod")
+export("calculateCovariances")
+export("calculateKostCovariance")

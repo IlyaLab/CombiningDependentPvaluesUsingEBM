@@ -77,24 +77,24 @@ combinePValues <- function(covar_matrix, p_values, extra_info = FALSE){
     }
 }
 
-#Input: An m x n data matrix with each of m rows representing a variable and each of n columns representing a sample. Should be of type numpy.array
+#Input: Either an m x n data matrix with each of m rows representing a variable and each of n columns representing a sample or a covariance table.
 #       A vector of m P-values to combine. May be a list or of type numpy.array.
 #Output: A combined P-value.
 #        If extra_info == True: also returns the p-value from Fisher's method, the scale factor c, and the new degrees of freedom from Brown's Method
-empiricalBrownsMethod <- function(data_matrix, p_values, extra_info = FALSE) {
+empiricalBrownsMethod <- function(p_values, data_matrix, covar_matrix, extra_info = FALSE) {
   # inputs must be numeric
-    covar_matrix = calculateCovariances(data_matrix)
+    if (missing(covar_matrix)) covar_matrix <- calculateCovariances(data_matrix)
     return(combinePValues(covar_matrix, p_values, extra_info))
 }
 
 #
 
-#Input: An m x n data matrix with each of m rows representing a variable and each of n columns representing a sample. Should be of type numeric matrix
+#Input: Either an m x n data matrix with each of m rows representing a variable and each of n columns representing a sample or a covariance table. Should be of type numeric matrix
 #       A numeric vector of m P-values to combine.
 #Output: A combined P-value using Kost's Method.
 #        If extra_info == True: also returns the p-value from Fisher's method, the scale factor c, and the new degrees of freedom from Brown's Method
-kostsMethod <- function(data_matrix, p_values, extra_info = FALSE) {
-    covar_matrix <- calculateKostCovariance(data_matrix)
+kostsMethod <- function(p_values, data_matrix, covar_matrix, extra_info = FALSE) {
+    if (missing(covar_matrix)) covar_matrix <- calculateKostCovariance(data_matrix)
     combinePValues(covar_matrix, p_values, extra_info = extra_info)
 }
 
